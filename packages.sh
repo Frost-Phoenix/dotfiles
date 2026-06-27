@@ -1,4 +1,7 @@
-PACKAGES=()
+PACKAGES=(
+    nwg-look
+    firefox
+)
 FLATPAKS=()
 
 install_dnf_packages() {
