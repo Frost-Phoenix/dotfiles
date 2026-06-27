@@ -9,9 +9,9 @@ add_config() {
     grep -qF "$config" "$file" || echo "$config" | sudo tee -a "$file" >/dev/null
 }
 
-add_config_if_not_present "/etc/dnf/dnf.conf" "defaultyes=True"
-add_config_if_not_present "/etc/dnf/dnf.conf" "fastestmirror=True"
-add_config_if_not_present "/etc/dnf/dnf.conf" "max_parallel_downloads=10"
+add_config "/etc/dnf/dnf.conf" "defaultyes=True"
+add_config "/etc/dnf/dnf.conf" "fastestmirror=True"
+add_config "/etc/dnf/dnf.conf" "max_parallel_downloads=10"
 
 sudo dnf -y upgrade --refresh
 
