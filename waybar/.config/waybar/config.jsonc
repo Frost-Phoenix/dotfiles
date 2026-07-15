@@ -1,0 +1,168 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 30,
+    "margin": 0,
+
+    "modules-left": [
+        "custom/launcher",
+        "hyprland/workspaces",
+        "tray"
+    ],
+    "modules-center": [ "clock" ],
+    "modules-right": [
+        "cpu",
+        "memory",
+        "temperature",
+        "pulseaudio",
+        "backlight",
+        // "network",
+        "battery",
+        // "hyprland/language",
+        "custom/notification",
+        "custom/power-menu"
+    ],
+
+    "custom/launcher": {
+        "format": "󰣛",
+        "on-click": "random-wallpaper",
+        "on-click-right": "rofi -show drun",
+        "tooltip": true,
+        "tooltip-format": "Random Wallpaper"
+    },
+    "hyprland/workspaces": {
+        "active-only": false,
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "1": "I",
+            "2": "II",
+            "3": "III",
+            "4": "IV",
+            "5": "V",
+            "6": "VI",
+            "7": "VII",
+            "8": "VIII",
+            "9": "IX",
+            "10": "X",
+            "sort-by-number": true
+        },
+        "persistent-workspaces": {
+            "*": [1, 2, 3, 4, 5],
+        }
+    },
+    "tray": {
+        "icon-size": 20,
+        "spacing": 8
+    },
+
+    "clock": {
+        "calendar": {
+            "format": {
+                "today": "<span color='#98971A'><b>{}</b></span>"
+            }
+        },
+        "format": "{:%H:%M}",
+        "tooltip": true,
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%d/%m}"
+    },
+
+    "cpu": {
+        "format": "<span foreground='#98971A'> </span> {usage}%",
+        "format-alt": "<span foreground='#98971A'> </span> {avg_frequency} GHz",
+        "interval": 2,
+        "on-click-right": ""
+    },
+    "memory": {
+        "format": "<span foreground='#689D6A'>  </span>{}%",
+        "format-alt": "<span foreground='#689D6A'>  </span>{used} GiB",
+        "interval": 2,
+        "on-click-right": ""
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "<span foreground='#458588'> </span> {volume}%",
+        "format-icons": {
+            "default": [
+                "<span foreground='#458588'> </span>"
+            ]
+        },
+        "scroll-step": 2,
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pavucontrol"
+    },
+    "network": {
+        "format-wifi": "<span foreground='#B16286'> </span> {signalStrength}%",
+        "format-ethernet": "<span foreground='#B16286'>󰀂 </span>",
+        "tooltip-format": "Connected to {essid} {ifname} via {gwaddr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "<span foreground='#B16286'>󰖪 </span>"
+    },
+    "battery": {
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "format": "<span foreground='#FABD2F'>{icon}</span> {capacity}%",
+        "format-alt": "<span foreground='#FABD2F'>{icon}</span> {time}",
+        "format-charging": "<span foreground='#FABD2F'> </span>{capacity}%",
+        "format-icons": [
+            " ",
+            " ",
+            " ",
+            " " ,
+            " "
+        ],
+        "interval": 5,
+        "tooltip": true,
+        "tooltip-format": "{time}",
+        "format-time": "{H}h{M}m"
+    },
+    "backlight": {
+        "format": "<span foreground='#d3869b'>󰃟 </span>{percent}%",
+        "on-scroll-up": "brightnessctl s +5%",
+        "on-scroll-down": "brightnessctl s 5%-",
+        "tooltip": false
+    },
+    "temperature": {
+        "format": "<span foreground='#fe8019'> </span>{temperatureC}°",
+        "critical-threshold": 70,
+        "interval": 2
+    },
+    "hyprland/language": {
+        "tooltip": true,
+        "tooltip-format": "Keyboard layout",
+        "format": "<span foreground='#FABD2F'> </span> {}",
+        "format-fr": "FR",
+        "format-en": "US",
+        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+    },
+    "custom/notification": {
+        "tooltip": true,
+        "tooltip-format": "Notifications",
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "<span foreground='red'><sup></sup></span>",
+            "none": "",
+            "dnd-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-none": "",
+            "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "inhibited-none": "",
+            "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+    "custom/power-menu": {
+        "tooltip": true,
+        "tooltip-format": "Power menu",
+        "format": "<span foreground='#CC241D'> </span>",
+        "on-click": "power-menu"
+    }
+}
