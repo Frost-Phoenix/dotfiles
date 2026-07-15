@@ -1,0 +1,11 @@
+export XCURSOR_SIZE=24
+export XCURSOR_THEME=Bibata-Modern-Ice
+
+export QT_QPA_PLATFORM=wayland
+export QT_QPA_PLATFORMTHEME=qt5ct
+
+export GTK_THEME=Colloid-Green-Dark-Gruvbox
+
+PATH=$HOME/.local/bin:$HOME/.local/scripts:$HOME/.cargo/bin:$HOME/.opencode/bin:$PATH
+
+export EDITOR=micro
