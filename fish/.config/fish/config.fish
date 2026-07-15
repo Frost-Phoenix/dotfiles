@@ -38,7 +38,7 @@ set -x FZF_DEFAULT_OPTS '
 
 fzf_configure_bindings --directory=ctrl-f
 
-set fzf_fd_opts --hidden --exclude .git
+set fzf_fd_opts --hidden --exclude .git --no-ignore
 set fzf_preview_dir_cmd eza --icons -a --group-directories-first -1 --no-user --color=always
 set fzf_preview_file_cmd bat -p --color=always
 
@@ -47,7 +47,7 @@ set fzf_preview_file_cmd bat -p --color=always
 #---------------#
 
 set fifc_bat_opts -p
-set fifc_fd_opts --hidden --exclude .git
+set fifc_fd_opts --hidden --exclude .git --no-ignore
 set fifc_eza_opts --icons -a --group-directories-first -1 --no-user --color=always
 
 function _autopair_tab
