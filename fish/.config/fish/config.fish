@@ -82,6 +82,7 @@ abbr -a -- m "micro"
 abbr -a -- f "spf"
 
 # --- program rename --- #
+abbr -a -- mk "mkdir -p"
 abbr -a -- copy "wl-copy"
 abbr -a -- dsize "du -hs"
 abbr -a -- open "xdg-open"
