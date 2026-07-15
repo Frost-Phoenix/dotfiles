@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+NOTIFY_DIR="/run/user/$UID"
+
+BATTERY_LEVEL=$(upower -i $(upower -e | grep BAT) | awk '/percentage/ {
+    print int($2)
+    exit
+}')
+BATTERY_STATE=$(upower -i $(upower -e | grep 'BAT') | grep -E "state" | awk '{print $2}')
+
+send_notification() {
+  local icon=$1
+  local title=$2
+  local body=$3
+
+  notify-send -u critical "$title" "$body" -i "$icon"
+}
+
+if [[ -n $BATTERY_LEVEL && $BATTERY_LEVEL =~ ^[0-9]+$ ]]; then
+  if [[ $BATTERY_STATE == "discharging" ]]; then
+    if (( BATTERY_LEVEL <= 10 )); then
+      if [[ ! -f "$NOTIFY_DIR/battery_10_notified" ]]; then
+        send_notification "battery-empty" "󱐋 Battery critical" "Battery is down to ${BATTERY_LEVEL}%"
+        touch "$NOTIFY_DIR/battery_10_notified"
+      fi
+    elif (( BATTERY_LEVEL <= 20 )); then
+      if [[ ! -f "$NOTIFY_DIR/battery_20_notified" ]]; then
+        send_notification "battery-caution" "󱐋 Time to recharge" "Battery is down to ${BATTERY_LEVEL}%"
+        touch "$NOTIFY_DIR/battery_20_notified"
+      fi
+    else
+      rm -f "$NOTIFY_DIR/battery_10_notified" "$NOTIFY_DIR/battery_20_notified"
+    fi
+  else
+    rm -f "$NOTIFY_DIR/battery_10_notified" "$NOTIFY_DIR/battery_20_notified"
+    fi
+fi
