@@ -1,0 +1,4 @@
+--target=~
+--no-folding
+--verbose
+--ignore='\.txt$'
