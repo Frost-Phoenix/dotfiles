@@ -1,0 +1,11 @@
+[Unit]
+Description=udiskie automount daemon
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/udiskie --automount --notify --smart-tray
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target

@@ -1,0 +1,7 @@
+[Unit]
+Description=Battery level notification alert
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/scripts/power-alert
