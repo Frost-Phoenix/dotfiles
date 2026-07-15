@@ -1,0 +1,33 @@
+{
+    "window.menuBarVisibility": "toggle",
+    "editor.fontFamily": "'Maple Mono', monospace",
+    "editor.fontSize": 18,
+    "editor.rulers": [
+        100
+    ],
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "workbench.startupEditor": "none",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.inlayHints.enabled": "off",
+    "workbench.layoutControl.type": "menu",
+    "workbench.editor.showTabs": "none",
+    "files.autoSave": "onWindowChange",
+    "files.insertFinalNewline": true,
+    "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "hidden",
+    "workbench.statusBar.visible": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.sideBar.location": "right",
+    "zig.path": "zig",
+    "zig.zls.path": "zls",
+    "zig.zls.enabled": "on",
+    "zig.zls.warnStyle": true,
+    "zig.buildOnSaveProvider": "zls",
+    "editor.scrollbar.horizontalScrollbarSize": 0,
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden"
+}
