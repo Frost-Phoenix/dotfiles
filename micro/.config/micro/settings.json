@@ -1,0 +1,23 @@
+{
+    "colorscheme": "gruvbox",
+
+    "tabsize": 4,
+    "tabstospaces": true,
+
+    "colorcolumn": 80,
+
+    "softwrap": true,
+    "wordwrap": true,
+    "mkparents": true,
+
+    "makefile": {
+      "tabstospaces": false,
+    },
+
+    "*.asm": {
+        "tasize": 2,
+    },
+    "ft:asm": {
+        "commenttype": "; %s",
+    },
+}
