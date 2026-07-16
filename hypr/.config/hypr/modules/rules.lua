@@ -58,6 +58,12 @@ float_centered_rule({
 })
 
 float_centered_rule({
+    name       = "float-xdg-portal",
+    match      = { class = "xdg-desktop-portal-gtk" },
+    dim_around = true,
+})
+
+float_centered_rule({
     name  = "blueman-manager-float",
     match = { class = "(blueman-manager)" },
 })
