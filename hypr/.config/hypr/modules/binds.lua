@@ -36,6 +36,7 @@ bind_cmd(mainMod .. " + B", browser)
 bind_cmd(mainMod .. " + E", fileManager)
 bind_cmd(mainMod .. " + D", menu)
 bind_cmd(secondMod .. " + D", prefix .. "flatpak run dev.vencord.Vesktop")
+bind_cmd(secondMod .. " + N", prefix .. "flatpak run io.gitlab.news_flash.NewsFlash")
 bind_cmd("CTRL + SHIFT + escape", prefix .. "flatpak run net.nokyan.Resources")
 
 bind_cmd(mainMod .. " + escape", "hyprlock")
