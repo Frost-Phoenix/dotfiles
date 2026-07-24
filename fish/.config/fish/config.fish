@@ -98,7 +98,7 @@ abbr -a -- diff "delta --diff-so-fancy --side-by-side"
 
 # --- dnf --- #
 abbr -a -- in 'sudo dnf in'
-abbr -a -- update 'sudo dnf upgrade && flatpak update'
+abbr -a -- update 'sudo dnf upgrade --refresh && flatpak update'
 abbr -a -- clean 'sudo dnf clean all && sudo dnf autoremove'
 
 # --- git --- #
