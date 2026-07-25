@@ -47,7 +47,7 @@ case ${chosen} in
         run_cmd throughput-performance
         ;;
     $balanced)
-        run_cmd balanced
+        run_cmd desktop
         ;;
     $power_saver)
         run_cmd powersave
