@@ -96,7 +96,7 @@ hl.window_rule({ match = { class = "^(Aseprite)$" }, workspace = 4 })
 hl.window_rule({ match = { class = "^(audacious)$" }, workspace = 5 })
 hl.window_rule({ match = { class = "(.*NewsFlash.*)" }, workspace = 6 })
 hl.window_rule({ match = { class = "^(com.obsproject.Studio)$" }, workspace = 8 })
-hl.window_rule({ match = { class = "^(net.nokyan.Resources)$" }, workspace = 9 })
+hl.window_rule({ match = { class = "^(io.missioncenter.MissionCenter)$" }, workspace = 9 })
 hl.window_rule({ match = { class = "(.*vesktop.*)" }, workspace = 10 })
 
 ----------------
