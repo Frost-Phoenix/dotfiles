@@ -30,5 +30,6 @@
     "editor.scrollbar.verticalScrollbarSize": 0,
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
-    "security.workspace.trust.startupPrompt": "always"
+    "security.workspace.trust.startupPrompt": "always",
+    "explorer.confirmDelete": false
 }
