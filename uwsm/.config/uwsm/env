@@ -9,3 +9,5 @@ export GTK_THEME=Colloid-Green-Dark-Gruvbox
 PATH=$HOME/.local/bin:$HOME/.local/scripts:$HOME/.cargo/bin:$HOME/.opencode/bin:$PATH
 
 export EDITOR=micro
+
+export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
