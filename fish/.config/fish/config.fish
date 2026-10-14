@@ -89,6 +89,8 @@ abbr -a -- open "xdg-open"
 abbr -a -- icat "kitten icat"
 abbr -a -- py "python"
 abbr -a -- ipy "ipython"
+abbr -a -- gfixf "gramma -l fr listen"
+abbr -a -- gfixe "gramma -l en listen"
 
 # --- program overide --- #
 abbr -a -- cat "bat"
