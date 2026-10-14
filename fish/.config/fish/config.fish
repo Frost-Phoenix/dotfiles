@@ -106,6 +106,7 @@ abbr -a -- g lazygit
 abbr -a -- gf 'onefetch --number-of-file-churns 0 --no-color-palette'
 
 abbr -a -- gs "git status"
+abbr -a -- gss "git status -s"
 abbr -a -- gcl "git clone"
 abbr -a -- gd "git diff"
 abbr -a -- ga "git add"
