@@ -1,0 +1,7 @@
+inherits = "gruvbox_dark_hard"
+
+"ui.background" = {}
+"ui.popup" = {}
+"ui.help" = {}
+"ui.menu" = {}
+"ui.menu.selected" = { modifiers = ["reversed"] }

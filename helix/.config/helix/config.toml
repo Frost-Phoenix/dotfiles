@@ -1,0 +1,79 @@
+theme = "gruvbox_dark_hard_transparent"
+
+[editor]
+line-number = "relative"
+cursorline = true
+color-modes = true
+true-color = true
+completion-replace = true
+end-of-line-diagnostics = "hint"
+
+mouse = false
+
+rulers = [100]
+ruler-char = "┊"
+
+trim-trailing-whitespace = true
+
+popup-border = "all"
+
+soft-wrap.enable = true
+
+[editor.bufferline]
+render-mode = "multiple"
+separator = ""
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+render = true
+skip-levels = 1
+
+[editor.statusline]
+right = ["diagnostics", "selections", "register", "position", "position-percentage", "file-encoding", "spacer"]
+
+[editor.statusline.mode]
+insert = "INSERT"
+normal = "NORMAL"
+select = "SELECT"
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+display-inlay-hints = true
+auto-document-highlight = true
+auto-signature-help = false
+display-signature-help-docs = false
+
+[editor.word-completion]
+trigger-length = 5
+
+[editor.notifications]
+enable = false
+
+[keys.normal]
+H = "goto_previous_buffer"
+L = "goto_next_buffer"
+C-s = ":write"
+C-S = ":write-all"
+C-q = ":buffer-close"
+C-Q = ":quit"
+space.o = "file_picker_in_current_buffer_directory"
+
+tab = "move_parent_node_end"
+S-tab = "move_parent_node_start"
+
+[keys.insert]
+S-tab = "move_parent_node_start"
+C-h = "move_char_left"
+C-j = "move_visual_line_down"
+C-k = "move_visual_line_up"
+C-l = "move_char_right"
+
+[keys.select]
+tab = "extend_parent_node_end"
+S-tab = "extend_parent_node_start"
