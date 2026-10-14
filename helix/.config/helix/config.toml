@@ -33,7 +33,15 @@ render = true
 skip-levels = 1
 
 [editor.statusline]
-right = ["diagnostics", "selections", "register", "position", "position-percentage", "file-encoding", "spacer"]
+right = [
+  "diagnostics",
+  "version-control",
+  "register",
+  "position",
+  "position-percentage",
+  "file-encoding",
+  "spacer",
+]
 
 [editor.statusline.mode]
 insert = "INSERT"
@@ -58,19 +66,21 @@ enable = false
 [keys.normal]
 H = "goto_previous_buffer"
 L = "goto_next_buffer"
+
 C-s = ":write"
 C-S = ":write-all"
 C-q = ":buffer-close"
 C-Q = ":quit"
-space.o = "file_picker_in_current_buffer_directory"
 
 tab = "move_parent_node_end"
 S-tab = "move_parent_node_start"
 
+space.o = "file_picker_in_current_buffer_directory"
 space.v = ":sh git-hunk %{buffer_name} %{cursor_line}"
 
 [keys.insert]
 S-tab = "move_parent_node_start"
+
 C-h = "move_char_left"
 C-j = "move_visual_line_down"
 C-k = "move_visual_line_up"
