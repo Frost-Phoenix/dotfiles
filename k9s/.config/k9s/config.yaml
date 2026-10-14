@@ -1,0 +1,11 @@
+k9s:
+    ui:
+        skin: gruvbox-dark-hard
+    logger:
+        tail: 5000
+        buffer: 5000
+        sinceSeconds: -1
+        textWrap: false
+        disableAutoscroll: false
+        columnLock: false
+        showTime: false
