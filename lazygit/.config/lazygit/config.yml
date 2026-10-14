@@ -4,6 +4,6 @@ gui:
 notARepository: quit
 
 git:
-  pagers:
-    - pager: delta --paging=never --line-numbers --no-gitconfig --syntax-theme=gruvbox-dark
+  diffRenderers:
+    - command: delta --paging=never --line-numbers --no-gitconfig --syntax-theme=gruvbox-dark
       colorArg: always
