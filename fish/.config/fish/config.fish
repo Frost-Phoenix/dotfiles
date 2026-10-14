@@ -94,7 +94,7 @@ abbr -a -- ipy "ipython"
 abbr -a -- cat "bat"
 abbr -a -- less "bat"
 abbr -a -- code "codium"
-abbr -a -- diff "delta --diff-so-fancy --side-by-side"
+abbr -a -- diff "delta"
 
 # --- dnf --- #
 abbr -a -- in 'sudo dnf in'
