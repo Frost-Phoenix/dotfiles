@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# Print the git diff hunk that contains a given line of a file.
+# Usage: hunk.sh <file> <line>
+
+file="$1"
+line="$2"
+
+git diff -U0 -- "$file" | awk -v line="$line" '
+  /^@@/ {
+    # Stop once the target hunk has been printed
+    if (found) exit
+
+    # Extract the new-file range: "+start" or "+start,count"
+    match($0, /\+[0-9]+(,[0-9]+)?/)
+    range = substr($0, RSTART + 1, RLENGTH - 1)
+    split(range, parts, ",")
+
+    start = parts[1]
+    count = (parts[2] != "" ? parts[2] : 1)
+    end   = start + count - 1
+
+    found = (line >= start && line <= end)
+    if (found) print
+    next
+  }
+  # Print the body lines of the matching hunk
+  found { print }
+'
