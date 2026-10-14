@@ -2,3 +2,8 @@ gui:
   border: single
 
 notARepository: quit
+
+git:
+  pagers:
+    - pager: delta --paging=never --line-numbers --no-gitconfig --syntax-theme=gruvbox-dark
+      colorArg: always
