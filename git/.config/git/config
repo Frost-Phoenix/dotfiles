@@ -1,27 +1,31 @@
-[user]
-	name = Frost-Phoenix
-	email = 67cyril6767@gmail.com
 [init]
 	defaultBranch = main
+[core]
+	pager = delta
+	excludesFile = ~/.config/git/ignore
 [merge]
-	conflictstyle = diff3
+	conflictstyle = zdiff3
 [diff]
 	colorMoved = default
 [pull]
 	ff = only
+    rebase = true
+[fetch]
+    prune = true
+[rebase]
+    autoStash = true
 [color]
 	ui = true
+
+[delta]
+	navigate = true
+	line-numbers = true
+	side-by-side = true
+	syntax-theme = gruvbox-dark
+[interactive]
+	diffFilter = delta --color-only
+
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [url "git@github.com:frost-phoenix/"]
 	insteadOf = fp:
-[core]
-	excludesFile = /home/frostphoenix/.config/git/ignore
-	pager = delta
-[interactive]
-	diffFilter = delta --color-only
-[delta]
-	line-numbers = true
-	side-by-side = true
-	diff-so-fancy = true
-	navigate = true
