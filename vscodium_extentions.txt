@@ -1,3 +1,4 @@
+danielgavin.ols
 jdinhlife.gruvbox
 yzhang.markdown-all-in-one
 ziglang.vscode-zig
