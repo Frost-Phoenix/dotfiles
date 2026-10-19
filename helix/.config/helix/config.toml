@@ -50,6 +50,7 @@ select = "SELECT"
 
 [editor.file-picker]
 hidden = false
+git-ignore = false
 
 [editor.lsp]
 display-inlay-hints = true
