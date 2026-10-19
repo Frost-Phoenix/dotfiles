@@ -1,0 +1,71 @@
+theme = "gruvbox-custom"
+
+[editor]
+line-number = "relative"
+text-width = 100
+icons = true
+rulers = [100]
+mouse = false
+
+[editor.file-picker]
+hidden = false
+git-ignore = false
+
+[editor.statusline]
+mode.color = true
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+right = [
+  "diagnostics",
+  "register",
+  "file-indent-style",
+  "position",
+  "position-percentage",
+  "spacer",
+  "file-encoding"
+]
+
+[editor.indent-guides]
+render = true
+skip-levels = 1
+
+[editor.soft-wrap]
+enable = true
+
+[editor.bufferline]
+show = "multiple"
+
+[editor.completion]
+trigger-length = 3
+word.trigger-length = 5
+
+[editor.cursor]
+highlight-line = true
+shape.insert = "bar"
+shape.normal = "block"
+shape.select = "underline"
+
+[editor.files]
+editor-config = false
+save.trim-trailing-whitespace = true
+auto-save.focus-lost = true
+
+[keys.normal]
+H = "goto_previous_buffer"
+L = "goto_next_buffer"
+
+C-s = ":write"
+C-S = ":write-all"
+C-q = ":buffer-close"
+C-Q = ":quit"
+
+space.o = "file_picker_in_current_buffer_directory"
+space.v = ":sh git-hunk %{buffer_name} %{cursor_line}"
+space.W = ":toggle whitespace.render \"all\" \"none\""
+
+[keys.insert]
+C-h = "move_char_left"
+C-j = "move_visual_line_down"
+C-k = "move_visual_line_up"
+C-l = "move_char_right"
