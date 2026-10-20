@@ -8,8 +8,11 @@ inherits = "gruvbox"
 
 ## darker less invasive bufferline
 "ui.bufferline" = { fg = "fg1" }
-"ui.bufferline.active" = { fg = "fg1", bg = "bg1" }
+"ui.bufferline.active" = { fg = "fg1", bg = "bg2" }
 "ui.bufferline.background" = {}
+
+## more visible trailing whitespace
+"ui.virtual.trailing_whitespace" = "red0"
 
 ## Dark hard varriant palette
 [palette]
