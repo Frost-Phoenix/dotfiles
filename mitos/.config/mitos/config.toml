@@ -6,6 +6,7 @@ text-width = 100
 icons = true
 rulers = [100]
 mouse = false
+border-style = "plain"
 
 [editor.file-picker]
 hidden = false
@@ -50,9 +51,6 @@ shape.select = "underline"
 editor-config = false
 save.trim-trailing-whitespace = true
 auto-save.focus-lost = true
-
-[editor.whitespace]
-render = "trailing"
 
 [keys.normal]
 H = "goto_previous_buffer"
