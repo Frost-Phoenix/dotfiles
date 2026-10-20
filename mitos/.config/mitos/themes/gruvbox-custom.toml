@@ -1,14 +1,21 @@
 inherits = "gruvbox"
 
-"ui.cursor.primary" = { modifiers = ["reversed"] }
-"ui.cursor.match" = { bg = "bg2" }
-
-"diagnostic.error" = { underline = { color = "red0", style = "curl"} }
-
+## Transparent background
 "ui.background" = {}
 "ui.popup" = {}
 "ui.help" = {}
 "ui.menu" = {}
 
+## darker less invasive bufferline
+"ui.bufferline" = { fg = "fg1" }
+"ui.bufferline.active" = { fg = "fg1", bg = "bg1" }
+"ui.bufferline.background" = {}
+
+## Dark hard varriant palette
 [palette]
 bg0 = "#1d2021"
+bg0_s = "#282828"
+bg1 = "#32302f"
+bg2 = "#3c3836"
+bg3 = "#504945"
+bg4 = "#665c54"
