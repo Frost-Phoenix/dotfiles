@@ -9,7 +9,7 @@ theme = gruvbox
 background-opacity = 0.33
 
 window-padding-balance = true
-window-padding-color = extend
+window-padding-color = background
 
 resize-overlay = never
 app-notifications = no-clipboard-copy
