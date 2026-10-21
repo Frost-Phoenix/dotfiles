@@ -1,0 +1,7 @@
+theme = "./gruvbox.toml"
+
+editor = "ms"
+
+width = 120
+
+watch = true
