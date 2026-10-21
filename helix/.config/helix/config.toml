@@ -7,7 +7,6 @@ color-modes = true
 true-color = true
 completion-replace = true
 end-of-line-diagnostics = "hint"
-
 mouse = false
 
 rulers = [100]
@@ -33,20 +32,31 @@ render = true
 skip-levels = 1
 
 [editor.statusline]
+left = [
+  "mode",
+  "spinner",
+  "version-control",
+  "file-name",
+  "read-only-indicator",
+  "file-modification-indicator"
+]
 right = [
   "diagnostics",
-  "version-control",
   "register",
+  "file-indent-style",
   "position",
   "position-percentage",
-  "file-encoding",
   "spacer",
+  "file-encoding"
 ]
 
 [editor.statusline.mode]
 insert = "INSERT"
 normal = "NORMAL"
 select = "SELECT"
+
+[editor.gutters.line-numbers]
+same-color = true
 
 [editor.file-picker]
 hidden = false
@@ -63,6 +73,9 @@ trigger-length = 5
 
 [editor.notifications]
 enable = false
+
+[editor.inline-diagnostics]
+show-virtual-lines = true
 
 [keys.normal]
 H = "goto_previous_buffer"
