@@ -22,6 +22,8 @@ gui:
   showBottomLine: false
 
 git:
+  localBranchSortOrder: recency
+
   diffRenderers:
     - command: delta --paging=never --line-numbers --no-gitconfig --syntax-theme=gruvbox-dark
       colorArg: always
