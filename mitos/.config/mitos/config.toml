@@ -1,6 +1,7 @@
 theme = "gruvbox-custom"
 
 [editor]
+welcome-screen = false
 line-number = "relative"
 text-width = 100
 icons = true
@@ -63,7 +64,6 @@ C-Q = ":quit"
 
 space.o = "file_picker_in_current_buffer_directory"
 space.v = ":sh git-hunk %{buffer_name} %{cursor_line}"
-space.W = ":toggle whitespace.render \"all\" \"none\""
 
 [keys.insert]
 C-h = "move_char_left"
