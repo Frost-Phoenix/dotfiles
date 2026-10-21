@@ -78,7 +78,7 @@ alias tree "eza --icons --tree --group-directories-first"
 
 # --- one letter --- #
 abbr -a -- c clear
-abbr -a -- m "micro"
+abbr -a -- m "ms"
 abbr -a -- f "spf"
 
 # --- program rename --- #
