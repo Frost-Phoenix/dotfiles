@@ -1,7 +1,29 @@
-inherits = "gruvbox_dark_hard"
+inherits = "gruvbox"
 
+## Transparent background
 "ui.background" = {}
 "ui.popup" = {}
 "ui.help" = {}
 "ui.menu" = {}
-"ui.menu.selected" = { modifiers = ["reversed"] }
+
+## darker less invasive bufferline
+"ui.bufferline" = { fg = "fg1" }
+"ui.bufferline.active" = { fg = "fg1", bg = "bg2" }
+"ui.bufferline.background" = {}
+
+## current line number color match mode
+"ui.linenr.insert" = { fg = "blue1" }
+"ui.linenr.select" = { fg = "orange1" }
+"ui.linenr.normal" = { fg = "fg3" }
+
+## more visible trailing whitespace
+"ui.virtual.trailing_whitespace" = "red0"
+
+## Dark hard varriant palette
+[palette]
+bg0 = "#1d2021"
+bg0_s = "#282828"
+bg1 = "#32302f"
+bg2 = "#3c3836"
+bg3 = "#504945"
+bg4 = "#665c54"
