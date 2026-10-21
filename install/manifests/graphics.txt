@@ -1,0 +1,9 @@
+# AMD Radeon 860M (Krackan). mesa-dri-drivers ships the VA-API *_drv_video.so.
+mesa-dri-drivers
+mesa-libEGL
+mesa-libgbm
+mesa-libGL
+mesa-vulkan-drivers
+vulkan-loader
+libva
+libva-utils

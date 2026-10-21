@@ -1,0 +1,10 @@
+# cargo-installed crates. Format: "<crate>" or "<crate>:<binary>".
+amdtop:amdtop
+bluetui:bluetui
+caligula:caligula
+cargo-update:cargo-install-update
+feedr:feedr
+jolt-tui:jolt
+leaf-markdown-viewer:leaf
+tetrs-tui:tetrs
+woomer:woomer

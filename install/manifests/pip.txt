@@ -1,0 +1,5 @@
+# Python user tools (provide binaries in ~/.local/bin).
+# VERIFY names on a fresh install; some may be project deps rather than tools.
+yt-dlp
+spotdl
+joycond-cemuhook

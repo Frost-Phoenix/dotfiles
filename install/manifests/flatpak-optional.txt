@@ -1,0 +1,9 @@
+# Flathub apps — optional profile (games / media / personal).
+com.valvesoftware.Steam
+com.protonvpn.www
+com.github.johnfactotum.Foliate
+info.cemu.Cemu
+io.mgba.mGBA
+md.obsidian.Obsidian
+net.kuribo64.melonDS
+org.prismlauncher.PrismLauncher

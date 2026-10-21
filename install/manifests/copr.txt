@@ -1,0 +1,6 @@
+# COPR repositories (owner/repo). `lazygit` may move to a source build later.
+lionheartp/Hyprland
+alternateved/keyd
+erikreider/swayosd
+scottames/ghostty
+dejan/lazygit
