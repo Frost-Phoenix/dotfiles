@@ -4,6 +4,10 @@ quitOnTopLevelReturn: true
 
 promptToReturnFromSubprocess: false
 
+os:
+  edit: 'ms -- {{filename}}'
+  editAtLine: 'ms -- {{filename}}:{{line}}'
+
 gui:
   border: single
 
