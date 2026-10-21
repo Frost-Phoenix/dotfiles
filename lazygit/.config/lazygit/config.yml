@@ -1,7 +1,21 @@
+notARepository: quit
+
+quitOnTopLevelReturn: true
+
+promptToReturnFromSubprocess: false
+
 gui:
   border: single
 
-notARepository: quit
+  expandFocusedSidePanel: true
+
+  showRootItemInFileTree: true
+
+  fileTreeSortOrder: foldersFirst
+
+  showNumstatInFilesView: true
+
+  showBottomLine: false
 
 git:
   diffRenderers:
