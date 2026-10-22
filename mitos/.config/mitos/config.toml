@@ -5,9 +5,11 @@ welcome-screen = false
 line-number = "relative"
 text-width = 100
 icons = true
-rulers = [100]
 mouse = false
 border-style = "plain"
+
+[editor.rulers]
+columns = [101]
 
 [editor.file-picker]
 hidden = false
