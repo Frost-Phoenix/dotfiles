@@ -49,6 +49,7 @@ word.trigger-length = 5
 
 [editor.cursor]
 highlight-line = true
+block-rendering = "native"
 shape.insert = "bar"
 shape.normal = "block"
 shape.select = "underline"
