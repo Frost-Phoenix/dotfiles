@@ -11,6 +11,9 @@ border-style = "plain"
 [editor.rulers]
 columns = [101]
 
+[editor.picker]
+layout = "centered"
+
 [editor.file-picker]
 hidden = false
 git-ignore = false
