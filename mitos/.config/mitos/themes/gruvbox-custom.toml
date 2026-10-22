@@ -11,8 +11,9 @@ inherits = "gruvbox"
 "ui.bufferline.active" = { fg = "fg1", bg = "bg2" }
 "ui.bufferline.background" = {}
 
-## more visible trailing whitespace
+## more visible trailing whitespace and ruler
 "ui.virtual.trailing_whitespace" = "red0"
+"ui.virtual.ruler" = { fg = "gray" }
 
 ## Dark hard varriant palette
 [palette]
