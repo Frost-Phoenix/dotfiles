@@ -74,6 +74,8 @@ C-Q = ":quit"
 space.o = "file_picker_in_current_buffer_directory"
 space.v = ":sh git-hunk %{buffer_name} %{cursor_line}"
 
+"`" = "switch_case"
+
 [keys.insert]
 C-h = "move_char_left"
 C-j = "move_visual_line_down"
