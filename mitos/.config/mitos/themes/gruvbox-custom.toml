@@ -13,7 +13,7 @@ inherits = "gruvbox"
 
 ## more visible trailing whitespace and ruler
 "ui.virtual.trailing_whitespace" = "red0"
-"ui.virtual.ruler" = { fg = "gray" }
+"ui.virtual.ruler" = { fg = "gray", bg = "bg1" }
 
 ## Dark hard varriant palette
 [palette]

@@ -9,6 +9,7 @@ mouse = false
 border-style = "plain"
 
 [editor.rulers]
+style = "glyph"
 columns = [101]
 
 [editor.picker]
