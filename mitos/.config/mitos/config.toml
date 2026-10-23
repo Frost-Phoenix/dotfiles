@@ -38,6 +38,9 @@ right = [
 render = true
 skip-levels = 1
 
+[editor.gutters.line-numbers]
+min-width = 4
+
 [editor.soft-wrap]
 enable = true
 
