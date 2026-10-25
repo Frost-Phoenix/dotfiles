@@ -25,6 +25,7 @@ mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
 right = [
+  "search-position",
   "diagnostics",
   "register",
   "file-indent-style",
