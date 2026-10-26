@@ -1,0 +1,22 @@
+# PROFILE=optional only. RPM media / office / games.
+audacious
+vlc
+mpv
+obs-studio
+gimp
+libreoffice-calc
+libreoffice-writer
+libreoffice-impress
+libreoffice-graphicfilter
+libreoffice-emailmerge
+gstreamer1-plugins-bad-freeworld
+gstreamer1-plugins-ugly
+gstreamer1-plugins-ugly-free
+gstreamer1-plugin-libav
+gstreamer1-plugin-dav1d
+libheif-freeworld
+ffmpeg
+gamemode
+steam-devices
+sameboy
+snes9x

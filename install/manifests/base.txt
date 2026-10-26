@@ -1,0 +1,97 @@
+# Core base system — only what a fresh Fedora Minimal ISO does NOT already give us.
+# The @core/anaconda baseline is deliberately omitted; see the block at the bottom
+# of this file for what it provides and why each entry was dropped.
+# --- core tools / shell plumbing ---
+acl
+attr
+bzip2
+ed
+fuse-libs
+glibc-all-langpacks
+lsof
+man-pages
+openssl
+policycoreutils-python-utils
+systemd-oomd-defaults
+tar
+usbutils
+zip
+# --- repo / build workflow (stow.sh + sources/*.sh need these) ---
+git
+patch
+stow
+# --- hardware diagnostics ---
+drm-utils
+evtest
+hdparm
+pciutils
+v4l-utils
+# --- boot / kernel (AMD box, UEFI, no Secure Boot) ---
+# kernel/kernel-core/kernel-modules/linux-firmware/amd-*-firmware come from the
+# Minimal ISO itself (kernel-core Recommends linux-firmware, which Recommends the
+# AMD blobs) — only the extras are listed here.
+efibootmgr
+grub2-efi-x64
+grub2-efi-x64-modules
+grub2-tools-efi
+kernel-modules-extra
+# --- storage / filesystems ---
+compsize
+nvme-cli
+smartmontools
+udisks2-btrfs
+udiskie
+gvfs-afc
+gvfs-archive
+gvfs-fuse
+gvfs-gphoto2
+gvfs-mtp
+gvfs-smb
+# --- networking ---
+NetworkManager-config-connectivity-fedora
+network-manager-applet
+blueman
+ethtool
+bind-utils
+nmap-ncat
+mtr
+rsync
+traceroute
+tcpdump
+# --- audio / power / sensors ---
+alsa-utils
+alsa-ucm
+alsa-sof-firmware
+pipewire-alsa
+pipewire-pulseaudio
+pipewire-utils
+pipewire-codec-aptx
+wireplumber
+pavucontrol
+playerctl
+tuned
+tuned-ppd
+lm_sensors
+brightnessctl
+upower
+# --- desktop integration ---
+xdg-desktop-portal
+xdg-desktop-portal-gtk
+xdg-user-dirs
+dconf
+glycin-thumbnailer
+gst-thumbnailers
+nautilus
+librsvg2
+at-spi2-core
+at-spi2-atk
+papirus-icon-theme
+papirus-icon-theme-dark
+# --- fonts (Fedora 44 default-fonts model) ---
+default-fonts-core-emoji
+default-fonts-core-math
+default-fonts-core-mono
+default-fonts-core-serif
+default-fonts-other-mono
+default-fonts-other-sans
+default-fonts-other-serif

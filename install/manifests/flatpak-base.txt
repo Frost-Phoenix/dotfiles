@@ -1,0 +1,8 @@
+# Flathub apps — base profile.
+app.zen_browser.zen
+com.github.tchx84.Flatseal
+com.vscodium.codium
+io.gitlab.news_flash.NewsFlash
+io.missioncenter.MissionCenter
+dev.vencord.Vesktop
+it.mijorus.gearlever

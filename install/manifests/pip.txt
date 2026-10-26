@@ -1,0 +1,4 @@
+# Python user tools (provide binaries in ~/.local/bin).
+yt-dlp
+spotdl
+joycond-cemuhook

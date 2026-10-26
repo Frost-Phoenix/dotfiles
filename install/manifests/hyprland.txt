@@ -1,0 +1,31 @@
+# Hyprland desktop stack. hyprland/swayosd/ghostty come from the enabled coprs.
+# NOTE: the Hyprland config is Lua (hyprland.lua) — see AGENTS.md.
+hyprland
+hyprland-uwsm
+hyprland-guiutils
+hyprlock
+hyprpicker
+hyprpolkitagent
+hyprsysteminfo
+uwsm
+xdg-desktop-portal-hyprland
+waybar
+SwayNotificationCenter
+awww
+rofi
+grimblast
+grim
+slurp
+tesseract
+wl-clipboard
+cliphist
+swayosd
+qt5ct
+qt5-qtwayland
+qt6ct
+qt6-qtbase
+qt6-qtbase-gui
+qt6-qtdeclarative
+qt6-qtwayland-adwaita-decoration
+ghostty
+nwg-look
