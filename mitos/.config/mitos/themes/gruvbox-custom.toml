@@ -13,6 +13,7 @@ inherits = "gruvbox"
 
 ## more visible whitespaces and rulers
 "ui.virtual.whitespace" = "gray"
+"ui.virtual.indent-guide" = "bg4"
 "ui.virtual.ruler" = { fg = "gray", bg = "bg1" }
 
 ## Dark hard varriant palette
