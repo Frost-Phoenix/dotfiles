@@ -1,2 +1,7 @@
 .vscode
 .direnv
+
+## Java
+.factorypath
+.classpath
+.project
