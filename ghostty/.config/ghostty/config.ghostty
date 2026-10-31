@@ -6,6 +6,7 @@ cursor-style-blink = false
 adjust-cursor-thickness = 1
 
 theme = gruvbox
+background-blur = true
 background-opacity = 0.33
 
 window-padding-balance = true
