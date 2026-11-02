@@ -35,6 +35,9 @@ right = [
   "file-encoding"
 ]
 
+[editor.command-line]
+show = "auto"
+
 [editor.indent-guides]
 render = true
 skip-levels = 1
