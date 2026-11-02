@@ -135,6 +135,14 @@ function multicd
 end
 abbr --add dotdot --regex '^\.\.+$' --function multicd
 
+#---------------#
+#   functions   #
+#---------------#
+
+function rgd --wraps rg --description 'ripgrep with delta highlighting'
+    rg --json $argv | delta
+end
+
 #------------#
 #   zoxide   #
 #------------#
