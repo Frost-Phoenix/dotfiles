@@ -54,6 +54,10 @@ show = "multiple"
 [editor.completion]
 trigger-length = 3
 word.trigger-length = 5
+replace = true
+
+[editor.lsp]
+progress.enable = true
 
 [editor.cursor]
 highlight-line = true
