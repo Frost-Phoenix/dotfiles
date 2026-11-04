@@ -15,13 +15,13 @@ export PROFILE
 source ./lib.sh
 log "reinstall pipeline — profile: $PROFILE"
 
+log "=== stowing dotfiles ==="
+bash ./stow.sh
+
 for stage in [0-9][0-9]-*.sh; do
 	[[ -f "$stage" ]] || continue
 	log "=== stage: $stage ==="
 	bash "$stage"
 done
-
-log "=== stowing dotfiles ==="
-bash ./stow.sh
 
 log "reinstall complete (profile: $PROFILE)"

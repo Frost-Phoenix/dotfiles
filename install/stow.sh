@@ -8,6 +8,7 @@ source ./lib.sh
 HOME_PKGS=(
 	bat
 	electron
+	eza
 	fastfetch
 	fish
 	ghostty
@@ -17,7 +18,9 @@ HOME_PKGS=(
 	jolt
 	k9s
 	lazygit
+	leaf
 	micro
+	mitos
 	rofi
 	scripts
 	ssh
