@@ -31,6 +31,7 @@ right = [
   "file-indent-style",
   "position",
   "position-percentage",
+  "total-line-numbers",
   "spacer",
   "file-encoding"
 ]
