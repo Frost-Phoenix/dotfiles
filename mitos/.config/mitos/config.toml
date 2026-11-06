@@ -70,6 +70,7 @@ shape.select = "underline"
 [editor.files]
 editor-config = false
 save.trim-trailing-whitespace = true
+reload.poll.interval = 1000
 
 [editor.format]
 on-save = false
