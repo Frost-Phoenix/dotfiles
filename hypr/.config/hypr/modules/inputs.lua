@@ -10,7 +10,7 @@ hl.config({
         follow_mouse = 1,
         numlock_by_default = true,
         repeat_delay = 250,
-        repeat_rate = 30,
+        repeat_rate = 25,
         natural_scroll = true,
 
         touchpad = {
