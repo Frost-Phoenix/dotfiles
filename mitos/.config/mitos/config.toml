@@ -86,6 +86,7 @@ H = "goto_previous_buffer"
 L = "goto_next_buffer"
 
 D = ["extend_to_line_bounds", "delete_selection"]
+X = ["extend_to_line_bounds", "trim_selections"]
 
 A-p = "paste_after_all"
 A-P = "paste_before_all"
@@ -98,6 +99,7 @@ C-S = ":write-all"
 C-q = ":buffer-close"
 C-Q = ":quit"
 
+space.I = { label = "Restore Changes", command = ":vcs-restore-change" }
 space.o = "file_picker_in_current_buffer_directory"
 space.v = ":sh git-hunk %{buffer_name} %{cursor_line}"
 space.W = ":toggle soft-wrap.enable"
