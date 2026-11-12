@@ -24,6 +24,15 @@ mode.color = true
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
+left = [
+    "mode",
+    "spinner",
+    "branch",
+    "file-name",
+    "read-only-indicator",
+    "file-modification-indicator",
+    "debug-session",
+]
 right = [
   "search-position",
   "diagnostics",
@@ -56,9 +65,6 @@ show = "multiple"
 trigger-length = 3
 word.trigger-length = 5
 replace = true
-
-[editor.lsp]
-progress.enable = true
 
 [editor.cursor]
 highlight-line = true
