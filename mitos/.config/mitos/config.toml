@@ -101,7 +101,6 @@ C-Q = ":quit"
 
 space.I = { label = "Restore Changes", command = ":vcs-restore-change" }
 space.o = "file_picker_in_current_buffer_directory"
-space.v = ":sh git-hunk %{buffer_name} %{cursor_line}"
 space.W = ":toggle soft-wrap.enable"
 
 "`" = "switch_case"
