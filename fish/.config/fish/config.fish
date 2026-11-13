@@ -73,14 +73,14 @@ alias l "eza --icons -a --group-directories-first -1 --no-user --long"
 alias tree "eza --icons --tree --group-directories-first"
 alias rg "rg --hidden"
 
+# --- one letter --- #
+alias m "ms"
+alias f "spf"
+alias c "clear"
+
 #----------#
 #   abbr   #
 #----------#
-
-# --- one letter --- #
-abbr -a -- c clear
-abbr -a -- m "ms"
-abbr -a -- f "spf"
 
 # --- program rename --- #
 abbr -a -- mk "mkdir -p"
