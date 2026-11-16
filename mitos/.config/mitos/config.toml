@@ -63,8 +63,7 @@ show = "multiple"
 
 [editor.completion]
 trigger-length = 3
-word.trigger-length = 5
-replace = true
+word.trigger-length = 3
 
 [editor.cursor]
 highlight-line = true
