@@ -110,3 +110,8 @@ C-h = "move_char_left"
 C-j = "move_visual_line_down"
 C-k = "move_visual_line_up"
 C-l = "move_char_right"
+
+[commands]
+":buffer-name" = ":sh echo %{buffer_name} | xclip -selection clipboard"
+":buffer-path" = ":sh echo %{file_path_absolute} | xclip -selection clipboard"
+":buffer-position" = ":sh echo %{file_path_absolute}:%{cursor_line}:%{cursor_column} | xclip -selection clipboard"
