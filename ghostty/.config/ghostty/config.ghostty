@@ -9,6 +9,9 @@ theme = gruvbox
 background-blur = true
 background-opacity = 0.33
 
+custom-shader = shaders/cursor-trail.glsl
+# custom-shader-animation = always
+
 window-padding-balance = true
 window-padding-color = background
 
