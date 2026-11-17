@@ -16,6 +16,15 @@ inherits = "gruvbox"
 "ui.virtual.indent-guide" = "bg4"
 "ui.virtual.ruler" = { fg = "gray", bg = "bg1" }
 
+## better highlight on match
+"ui.cursor.match" = { fg = "purple0", modifiers = ["bold"] }
+
+## fix inline diagnostic colors
+"ui.diagnostic.inline.hint" = "blue1"
+"ui.diagnostic.inline.info" = "aqua1"
+"ui.diagnostic.inline.warning" = "yellow1"
+"ui.diagnostic.inline.error" = "red1"
+
 ## Dark hard varriant palette
 [palette]
 bg0 = "#1d2021"
