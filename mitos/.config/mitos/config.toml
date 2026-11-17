@@ -108,6 +108,8 @@ space.W = { label = "Toggle soft wrap", command = ":toggle soft-wrap.enable" }
 [keys.normal.space.space]
 l = { label = "Lazygit", command = ":noop %sh_interactive{lazygit}" }
 m = { label = "Leaf",    command = ":noop %sh_interactive{leaf %{file_path_absolute} >/dev/tty}" }
+f = { label = "Superfile (working dirrectory)", command = ":noop %sh_interactive{spf %{current_working_directory} >/dev/tty}" }
+F = { label = "Superfile (buffer dirrectory)", command = ":noop %sh_interactive{spf %{buffer_directory} >/dev/tty}" }
 
 [keys.insert]
 C-h = "move_char_left"
