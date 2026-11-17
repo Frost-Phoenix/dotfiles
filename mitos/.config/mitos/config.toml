@@ -118,7 +118,7 @@ C-k = "move_visual_line_up"
 C-l = "move_char_right"
 
 [commands]
-":buffer-name" = ":sh echo %{buffer_name} | xclip -selection clipboard"
-":buffer-path" = ":sh echo %{file_path_absolute} | xclip -selection clipboard"
-":buffer-position" = ":sh echo %{file_path_absolute}:%{cursor_line}:%{cursor_column} | xclip -selection clipboard"
 ":size" = ":sh du -h %{file_path_absolute} | cut -f1"
+":buffer-name" = ":sh echo -n $(basename %{buffer_name}) | wl-copy"
+":buffer-path" = ":sh echo -n %{file_path_absolute} | wl-copy"
+":buffer-position" = ":sh echo -n %{file_path_absolute}:%{cursor_line}:%{cursor_column} | wl-copy"
