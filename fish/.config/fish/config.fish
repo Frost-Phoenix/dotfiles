@@ -78,6 +78,10 @@ alias m "ms"
 alias f "spf"
 alias c "clear"
 
+# --- mitos workspaces --- #
+alias dot "m ~/Documents/test/dotfiles/"
+alias notes "m ~/Documents/test/notes/"
+
 #----------#
 #   abbr   #
 #----------#
