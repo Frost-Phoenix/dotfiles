@@ -23,7 +23,9 @@ hl.config({
 
             size      = 4,
             passes    = 2,
-    
+
+            xray = true,
+
             contrast = 1.4,
             noise = 0,
         },
