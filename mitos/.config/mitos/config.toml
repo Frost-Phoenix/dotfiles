@@ -98,10 +98,11 @@ C-S = ":write-all"
 C-q = ":buffer-close"
 C-Q = ":quit"
 
-space.I = { label = "Restore Changes", command = ":vcs-restore-change" }
-space.W = ":toggle soft-wrap.enable"
-
 "`" = "switch_case"
+
+space.i = { label = "Show Changes",     command = ":vcs-show-change" }
+space.I = { label = "Restore Changes",  command = ":vcs-restore-change" }
+space.W = { label = "Toggle soft wrap", command = ":toggle soft-wrap.enable" }
 
 [keys.insert]
 C-h = "move_char_left"
