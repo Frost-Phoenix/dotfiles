@@ -104,6 +104,11 @@ space.i = { label = "Show Changes",     command = ":vcs-show-change" }
 space.I = { label = "Restore Changes",  command = ":vcs-restore-change" }
 space.W = { label = "Toggle soft wrap", command = ":toggle soft-wrap.enable" }
 
+# Double space for apps binds
+[keys.normal.space.space]
+l = { label = "Lazygit", command = ":noop %sh_interactive{lazygit}" }
+m = { label = "Leaf",    command = ":noop %sh_interactive{leaf %{file_path_absolute} >/dev/tty}" }
+
 [keys.insert]
 C-h = "move_char_left"
 C-j = "move_visual_line_down"
