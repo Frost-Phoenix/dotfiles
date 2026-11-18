@@ -1,0 +1,9 @@
+[global]
+disable = [
+  "MD033",    # allow inline HTML
+  "MD041",    # don't force a top-level heading
+]
+
+[MD013]
+line_length = 120
+code_blocks = false
