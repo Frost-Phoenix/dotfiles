@@ -76,6 +76,7 @@ alias rg "rg --hidden"
 # --- one letter --- #
 alias m "ms"
 alias f "spf"
+alias h "help"
 alias c "clear"
 
 # --- mitos workspaces --- #
@@ -146,6 +147,24 @@ abbr --add dotdot --regex '^\.\.+$' --function multicd
 
 function rgd --wraps rg --description 'ripgrep with delta highlighting'
     rg --json $argv | delta
+end
+
+function help --description 'Get the help of the given command. First look for man page, then `--help`.'
+    if test (count $argv) -eq 0
+        echo "usage: help command [args...]" >&2
+        return 2
+    end
+
+    if man $argv 2>/dev/null
+        return 0
+    end
+
+    if command -q bat
+        $argv --help 2>&1 | bat -p -l help --strip-ansi always
+        return $pipestatus[1]
+    else
+        $argv --help
+    end
 end
 
 #------------#
