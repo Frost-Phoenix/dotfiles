@@ -6,7 +6,7 @@ if not set -q LS_COLORS
     set -gx LS_COLORS (dircolors -b | sed "s/[^']*'//; s/'.*//; s/.\$//")
 end
 
-set -x MANPAGER bat -plman
+set -x MANPAGER bat -p -l man --strip-ansi always
 
 function fish_command_not_found
     __fish_default_command_not_found_handler $argv
