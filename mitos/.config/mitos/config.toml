@@ -89,6 +89,7 @@ X = ["extend_to_line_bounds", "trim_selections"]
 
 A-p = "paste_after_all"
 A-P = "paste_before_all"
+A-y = ["select_all", "yank_to_clipboard", "undo_selection"]
 
 A-k = "scroll_up"
 A-j = "scroll_down"
