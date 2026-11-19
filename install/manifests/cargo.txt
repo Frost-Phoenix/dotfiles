@@ -8,3 +8,5 @@ jolt-tui:jolt
 leaf-markdown-viewer:leaf
 tetrs-tui:tetrs
 woomer:woomer@git+https://github.com/coffeeispower/woomer
+ghgrab:ghgrab
+rumdl:rumdl
