@@ -5,5 +5,9 @@ disable = [
 ]
 
 [MD013]
+reflow = true
 line_length = 120
 code_blocks = false
+
+[MD030]
+ol-align-column = 4
