@@ -155,7 +155,7 @@ function help --description 'Get the help of the given command. First look for m
         return 2
     end
 
-    if man $argv 2>/dev/null
+    if man "$argv" 2>/dev/null
         return 0
     end
 
