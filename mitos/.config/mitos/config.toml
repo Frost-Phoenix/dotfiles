@@ -62,8 +62,10 @@ enable = true
 show = "multiple"
 
 [editor.completion]
+trigger-delay = 0
 trigger-length = 3
 word.trigger-length = 3
+preview-insert = false
 
 [editor.cursor]
 highlight-line = true
