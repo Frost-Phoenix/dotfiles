@@ -27,6 +27,7 @@ clipboard-write = allow
 
 quit-after-last-window-closed = false
 
+window-new-tab-position = end
 gtk-tabs-location = bottom
 gtk-wide-tabs = false
 gtk-custom-css = styles/tabs.css
@@ -42,6 +43,11 @@ keybind = alt+2=goto_tab:2
 keybind = alt+3=goto_tab:3
 keybind = alt+4=goto_tab:4
 keybind = alt+5=goto_tab:5
+keybind = alt+6=goto_tab:6
+keybind = alt+7=goto_tab:7
+keybind = alt+8=goto_tab:8
+keybind = alt+9=goto_tab:9
+keybind = alt+0=goto_tab:0
 
 keybind = ctrl+alt+e=new_split:down
 keybind = ctrl+alt+o=new_split:right
