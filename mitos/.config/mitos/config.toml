@@ -7,6 +7,7 @@ text-width = 100
 icons = true
 mouse = false
 border-style = "plain"
+auto-info-delay = 250
 
 [editor.rulers]
 style = "glyph"
