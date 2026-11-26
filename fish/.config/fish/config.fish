@@ -171,6 +171,23 @@ function fish_reload_config
     source ~/.config/fish/config.fish
 end
 
+function gds --description 'Git diff stats with then net line changes'
+    git diff --stat=$COLUMNS --color=always $argv | awk '/^ *[0-9]+ files? changed/ {
+        ins = 0; del = 0
+        for (i = 1; i <= NF; i++) {
+            if ($i ~ /^insertion/) ins = $(i-1)
+            if ($i ~ /^deletion/)  del = $(i-1)
+        }
+        gsub(/\(\+\)/, "(\033[32m+\033[0m)")
+        gsub(/\(-\)/,  "(\033[31m-\033[0m)")
+        net = ins - del
+        if (net > 0)      s = sprintf("net: %d insertion%s(\033[34m+\033[0m)", net, net == 1 ? "" : "s")
+        else if (net < 0) s = sprintf("net: %d deletion%s(\033[34m-\033[0m)", -net, net == -1 ? "" : "s")
+        else              s = "net: 0"
+        $0 = $0 ", " s
+    } 1' | bat --plain --paging=auto --color=never
+end
+
 #------------#
 #   zoxide   #
 #------------#
