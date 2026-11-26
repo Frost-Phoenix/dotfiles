@@ -1,0 +1,79 @@
+#!/usr/bin/env python3
+
+import os
+from collections import Counter
+
+TOP_N = 15
+
+def read_pss_kb(pid):
+    """Return the PSS of a process in KB, or 0 if it can't be read."""
+    try:
+        with open(f"/proc/{pid}/smaps_rollup") as f:
+            for line in f:
+                if line.startswith("Pss:"):
+                    return int(line.split()[1])
+    except OSError:
+        pass
+    return 0
+
+def read_exe_name(pid):
+    """Return the executable name of a process, or None if it can't be read."""
+    try:
+        path = os.readlink(f"/proc/{pid}/exe")
+    except OSError:
+        return None
+    return os.path.basename(path).removesuffix(" (deleted)")
+
+def read_meminfo_kb():
+    with open("/proc/meminfo") as f:
+        return {line.split(":")[0]: int(line.split()[1]) for line in f}
+
+def kernel_kb(mem):
+    """Kernel memory that isn't reclaimable and isn't owned by any process."""
+    return (
+        mem.get("SUnreclaim", 0)
+        + mem.get("KernelStack", 0)
+        + mem.get("PageTables", 0)
+        + mem.get("Percpu", 0)
+    )
+
+def mb(kb):
+    return f"{kb / 1024:9.1f} MB"
+
+def main():
+    usage = Counter()
+    for pid in os.listdir("/proc"):
+        if not pid.isdigit():
+            continue
+        name = read_exe_name(pid)
+        if name:
+            usage[name] += read_pss_kb(pid)
+
+    mem = read_meminfo_kb()
+    total = mem["MemTotal"]
+    available = mem["MemAvailable"]
+    used = total - available
+
+    top = usage.most_common(TOP_N)
+    for name, kb in top:
+        print(f"{mb(kb)}  {name}")
+
+    procs_total = sum(usage.values())
+    shown = sum(kb for _, kb in top)
+    kernel = kernel_kb(mem)
+    shmem = mem.get("Shmem", 0)
+    other = procs_total - shown
+    unattributed = used - procs_total - kernel
+
+    # print(f"{mb(other)}  (other processes)")
+    # print(f"{mb(kernel)}  kernel (slab+stacks+pagetables+percpu)")
+    # print(f"{mb(shmem)}  shmem/tmpfs (Shmem)")
+    # print(f"{mb(unattributed)}  unattributed")
+
+    print("-" * 32)
+    print(f"{mb(used)}  used")
+    print(f"{mb(available)}  available")
+    print(f"{mb(total)}  total")
+
+if __name__ == "__main__":
+    main()

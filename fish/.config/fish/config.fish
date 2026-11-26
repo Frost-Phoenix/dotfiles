@@ -188,6 +188,10 @@ function gds --description 'Git diff stats with then net line changes'
     } 1' | bat --plain --paging=auto --color=never
 end
 
+function memtop
+    sudo (command -v memtop)
+end
+
 #------------#
 #   zoxide   #
 #------------#
