@@ -167,6 +167,10 @@ function help --description 'Get the help of the given command. First look for m
     end
 end
 
+function fish_reload_config
+    source ~/.config/fish/config.fish
+end
+
 #------------#
 #   zoxide   #
 #------------#
