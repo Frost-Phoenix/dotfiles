@@ -97,6 +97,9 @@ A-y = ["select_all", "yank_to_clipboard", "undo_selection"]
 A-k = "scroll_up"
 A-j = "scroll_down"
 
+A-f = "file_picker_in_current_working_directory"
+A-e = "file_explorer_in_current_working_directory"
+
 C-s = ":write"
 C-S = ":write-all"
 C-q = ":buffer-close"
