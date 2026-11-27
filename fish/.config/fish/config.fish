@@ -68,7 +68,7 @@ set tide_left_prompt_items pwd git newline
 #   alias   #
 #-----------#
 
-alias cd "echo 'deprecated: use z'"
+alias cd "sl -e"
 alias l "eza --icons -a --group-directories-first -1 --no-user --long"
 alias tree "eza --icons --tree --group-directories-first"
 alias rg "rg --hidden"
