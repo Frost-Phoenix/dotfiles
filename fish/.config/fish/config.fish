@@ -136,10 +136,12 @@ abbr -a -- glols "git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s
 # --- other --- #
 abbr -a -- which type
 
-function multicd
-    echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
+# repeated dots for backward cd
+for n in (seq 2 10)
+    function (string repeat -n $n .) --inherit-variable n
+        builtin cd (string repeat -n (math $n - 1) ../)
+    end
 end
-abbr --add dotdot --regex '^\.\.+$' --function multicd
 
 #---------------#
 #   functions   #
