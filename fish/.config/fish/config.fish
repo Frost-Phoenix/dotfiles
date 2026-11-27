@@ -181,9 +181,8 @@ function gds --description 'Git diff stats with then net line changes'
         gsub(/\(\+\)/, "(\033[32m+\033[0m)")
         gsub(/\(-\)/,  "(\033[31m-\033[0m)")
         net = ins - del
-        if (net > 0)      s = sprintf("net: %d insertion%s(\033[34m+\033[0m)", net, net == 1 ? "" : "s")
-        else if (net < 0) s = sprintf("net: %d deletion%s(\033[34m-\033[0m)", -net, net == -1 ? "" : "s")
-        else              s = "net: 0"
+        if (net >= 0) s = sprintf("%d net insertion%s(\033[34m+\033[0m)", net, net == 1 ? "" : "s")
+        else          s = sprintf("%d net deletion%s(\033[34m-\033[0m)", -net, net == -1 ? "" : "s")
         $0 = $0 ", " s
     } 1' | bat --plain --paging=auto --color=never
 end
